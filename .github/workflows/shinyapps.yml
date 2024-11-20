@@ -44,5 +44,5 @@ jobs:
           
       - name: Deploy to shinyapps.io
         run: |
-          rsconnect::deployApp(appName = "ihtm-upload")
+          rsconnect::deployApp(appName = "ihtm-upload", forceUpdate = TRUE)
         shell: Rscript {0}
